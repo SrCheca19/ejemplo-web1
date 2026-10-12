@@ -1,3 +1,7 @@
+/* ===== AÑADIDO: fuentes para que se vean en todas las páginas ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Nunito+Sans:wght@300;400;700&display=swap');
+
+/* ===== CSS ORIGINAL (sin tocar) ===== */
 header {
 background-color:#3E6680;
 padding:15px;
@@ -38,3 +42,160 @@ color: white; }
 .PROY{background-color:#D6E0E7}
 .fila1{background-color:#CDE7F0}
 .hora{background-color:#BFE8E0}
+
+
+/* =====================================================
+   AÑADIDO: estilos extra para que todo quede más bonito
+   ===================================================== */
+
+/* ---------- General ---------- */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  background-color: #f4f7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #3E6680;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #8C4A5E;
+}
+
+/* ---------- Cabecera y menú ---------- */
+header {
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+header h1 {
+  color: white;
+  margin: 0 0 0 20px;
+  letter-spacing: 1px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin-left: 6px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+/* ---------- Contenido (main y página de inicio) ---------- */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* index.html no tiene <main>, así que centramos lo que va suelto en el body */
+body > h1,
+body > h2,
+body > p,
+body > ul {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+body > h1 {
+  margin-top: 30px;
+}
+h1, h2 {
+  color: #3E6680;
+}
+main h2 {
+  text-align: center;
+}
+
+/* ---------- Listas ---------- */
+li {
+  margin-bottom: 4px;
+}
+li::marker {
+  color: #8C4A5E;
+}
+
+/* ---------- Imágenes ---------- */
+img {
+  display: block;
+  max-width: 90%;
+  margin: 15px auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Tabla del horario ---------- */
+table {
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+td {
+  padding: 12px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.fila1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.hora {
+  font-weight: bold;
+}
+.REC {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+/* ---------- Formulario ---------- */
+fieldset {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background-color: white;
+  border: 2px solid #3E6680;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+legend {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #3E6680;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-family: inherit;
+}
+input:focus {
+  outline: none;
+  border-color: #3E6680;
+  box-shadow: 0 0 5px rgba(62, 102, 128, 0.6);
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  padding: 15px;
+  margin-top: 40px;
+}
+footer p {
+  margin: 0;
+}
